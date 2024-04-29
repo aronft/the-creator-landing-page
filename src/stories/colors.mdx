@@ -1,0 +1,36 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks'
+import resolveConfig from 'tailwindcss/resolveConfig'
+import tailwindConfig from '../../tailwind.config.ts'
+
+export const fullConfig = resolveConfig(tailwindConfig)
+export const colors = fullConfig.theme.accentColor
+
+<Meta title="Styles/Colors" />
+
+# Colors
+
+`tailwind.config.ts`
+
+## Primary
+
+<ColorPalette>
+    <ColorItem
+        title="Primary"
+        colors={{
+            '-primary': colors.primary,
+            '-primary-alt': colors['primary-alt'],
+        }}
+    />
+</ColorPalette>
+
+## Secondary
+
+<ColorPalette>
+    <ColorItem title="Secondary" colors={{ '-secondary': colors.secondary }} />
+</ColorPalette>
+
+## Tertiary
+
+<ColorPalette>
+    <ColorItem title="Tertiary" colors={{ '-tertiary': colors.tertiary }} />
+</ColorPalette>
