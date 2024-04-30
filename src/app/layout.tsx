@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 import { font } from '@/settings/fonts'
+import { cn } from '@/utils/class-names'
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -14,7 +15,7 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang="en" className={font.variable}>
+        <html lang="en" className={cn(font.variable, 'font-sans')}>
             <body>{children}</body>
         </html>
     )
