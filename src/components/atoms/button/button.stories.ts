@@ -4,6 +4,9 @@ import { Button } from './button'
 const meta = {
     title: 'Atoms/Button',
     component: Button,
+    args: {
+        children: 'Button',
+    },
 } satisfies Meta<typeof Button>
 
 export default meta
@@ -11,5 +14,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
-    args: {},
+    args: {
+        color: 'primary',
+    },
 }
