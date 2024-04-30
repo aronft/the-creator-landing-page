@@ -15,7 +15,7 @@ const preview: Preview = {
     },
     decorators: [
         (Story) => (
-            <main className={font.variable}>
+            <main className={`${font.variable} font-sans`}>
                 <Story />
             </main>
         ),
