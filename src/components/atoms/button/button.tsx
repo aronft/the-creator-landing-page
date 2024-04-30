@@ -3,17 +3,17 @@ import { cn } from '@/utils/class-names'
 type ButtonColors = 'primary'
 
 interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
-    color: ButtonColors
+    color?: ButtonColors
 }
 
-const impactClasses: Record<ButtonProps['color'], string> = {
+const impactClasses: Record<ButtonColors, string> = {
     primary: 'bg-primary text-secondary',
 }
 
 export const Button = ({
     children,
     className,
-    color,
+    color = 'primary',
     ...props
 }: ButtonProps) => {
     return (
