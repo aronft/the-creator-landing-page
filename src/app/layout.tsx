@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-import { font } from '@/settings/fonts'
+import { montserratFont, kulimParkFont } from '@/settings/fonts'
 import { cn } from '@/utils/class-names'
 
 export const metadata: Metadata = {
@@ -15,8 +15,15 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang="en" className={cn(font.variable, 'font-sans')}>
-            <body>{children}</body>
+        <html
+            lang="en"
+            className={cn(
+                montserratFont.variable,
+                kulimParkFont.variable,
+                'font-sans'
+            )}
+        >
+            <body className="bg-tertiary">{children}</body>
         </html>
     )
 }
