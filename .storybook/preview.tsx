@@ -2,7 +2,7 @@ import React from 'react'
 
 import type { Preview } from '@storybook/react'
 import '../src/app/globals.css'
-import { font } from '../src/settings/fonts'
+import { montserratFont, kulimParkFont } from '../src/settings/fonts'
 
 const preview: Preview = {
     parameters: {
@@ -15,7 +15,9 @@ const preview: Preview = {
     },
     decorators: [
         (Story) => (
-            <main className={`${font.variable} font-sans`}>
+            <main
+                className={`${montserratFont.variable} ${kulimParkFont.variable} font-sans`}
+            >
                 <Story />
             </main>
         ),

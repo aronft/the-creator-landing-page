@@ -10,6 +10,7 @@ const config: Config = {
         extend: {
             fontFamily: {
                 sans: ['var(--font-montserrat)'],
+                'sans-alt': ['var(--font-kulimpark)'],
             },
         },
         colors: {
