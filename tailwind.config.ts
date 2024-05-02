@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -19,6 +21,7 @@ const config: Config = {
             secondary: '#1F392C',
             tertiary: '#F8F5F0',
             white: '#fff',
+            neutral: colors.neutral,
         },
         fontSize: {
             base: ['1rem', { lineHeight: '1.5rem' }],
