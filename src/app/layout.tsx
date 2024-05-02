@@ -23,7 +23,7 @@ export default function RootLayout({
                 'font-sans'
             )}
         >
-            <body className="bg-tertiary">{children}</body>
+            <body className="bg-tertiary text-secondary">{children}</body>
         </html>
     )
 }

@@ -1,3 +1,13 @@
+import { Header } from '@/components/sections/header/header'
+import { ReliabilitySection } from '@/components/sections/reliability-section/reliability-section'
+
 export default function Home() {
-    return <h1 className="bg-primary">Prueba</h1>
+    return (
+        <>
+            <Header />
+            <main>
+                <ReliabilitySection />
+            </main>
+        </>
+    )
 }
