@@ -18,6 +18,7 @@ const config: Config = {
             'primary-alt': '#FFADF2',
             secondary: '#1F392C',
             tertiary: '#F8F5F0',
+            white: '#fff',
         },
         fontSize: {
             base: '1rem',
