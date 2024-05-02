@@ -2,7 +2,7 @@ import { cn } from '@/utils/class-names'
 
 type ButtonColors = 'primary'
 
-interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
+export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
     color?: ButtonColors
 }
 

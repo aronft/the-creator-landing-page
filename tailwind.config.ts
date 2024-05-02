@@ -22,6 +22,7 @@ const config: Config = {
             tertiary: '#F8F5F0',
             white: '#fff',
             neutral: colors.neutral,
+            transparent: colors.transparent,
         },
         fontSize: {
             base: ['1rem', { lineHeight: '1.5rem' }],
