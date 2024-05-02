@@ -1,8 +1,8 @@
 'use client'
-import { Button } from '@/components/atoms/button/button'
-import { Icon } from '@/components/atoms/icon/icon'
-import { Logo } from '@/components/atoms/logo/logo'
-import { UiList } from '@/components/objects/ui-list/ui-list'
+import { Button } from '@/components/ui/atoms/button/button'
+import { Icon } from '@/components/ui/atoms/icon/icon'
+import { Logo } from '@/components/ui/atoms/logo/logo'
+import { UiList } from '@/components/ui/objects/ui-list/ui-list'
 import { cn } from '@/utils/class-names'
 import React, { useState } from 'react'
 
