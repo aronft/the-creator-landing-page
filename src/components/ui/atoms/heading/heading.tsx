@@ -13,7 +13,7 @@ export interface HeadingProps extends HTMLAttributes<{}> {
 
 const HeadingSizesClasses: Record<HeadingSizes, string> = {
     small: 'text-4xl font-bold',
-    medium: 'text-5xl font-semibold',
+    medium: 'text-5xl font-bold',
     big: 'text-6xl font-bold',
     large: 'text-9xl font-bold',
 }
@@ -28,7 +28,11 @@ export const Heading = ({
     const Tag = tag
     return (
         <Tag
-            className={cn('', HeadingSizesClasses[size], className)}
+            className={cn(
+                'text-secondary',
+                HeadingSizesClasses[size],
+                className
+            )}
             {...props}
         >
             {children}
