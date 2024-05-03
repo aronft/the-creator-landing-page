@@ -9,7 +9,7 @@ interface UiListProps extends React.ComponentPropsWithoutRef<'ul'> {
 
 const directionClasses: Record<Directions, string> = {
     vertical: 'flex-col ',
-    horizontal: 'flex-row',
+    horizontal: 'flex-row flex-wrap',
 }
 
 export const UiList = ({
