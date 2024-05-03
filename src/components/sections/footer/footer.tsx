@@ -9,7 +9,7 @@ export const Footer = () => {
         <footer className="py-16">
             <Container className="flex flex-col gap-16">
                 <div className="flex flex-col gap-2 text-center">
-                    <Heading className="" size="big">
+                    <Heading className="" size="big" tag="h2">
                         We are waiting for you to contact us
                     </Heading>
                     <p className="text-xl">
