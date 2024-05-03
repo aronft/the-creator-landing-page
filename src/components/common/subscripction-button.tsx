@@ -15,7 +15,10 @@ export const SubscriptionButton = ({ className }: SubscriptionButtonProps) => {
                 className
             )}
         >
-            <Input className="w-full outline-none border-none pr-28" />
+            <Input
+                className="w-full outline-none border-none pr-28"
+                placeholder="Enter your Email"
+            />
             <Button className="absolute top-2 right-2">Join</Button>
         </div>
     )
