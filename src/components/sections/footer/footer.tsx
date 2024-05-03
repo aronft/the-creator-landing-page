@@ -39,9 +39,25 @@ export const Footer = () => {
                     </UiList>
 
                     <div className="flex flex-wrap gap-4 justify-center">
-                        <Icon icon="instagram" />
-                        <Icon icon="facebook" />
-                        <Icon icon="linkedin" />
+                        <a
+                            href="#"
+                            aria-label="Enlace a la red social Instagram"
+                        >
+                            <Icon icon="instagram" className="not-sr-only" />
+                        </a>
+                        <a aria-label="Enlace a la red social Facebook">
+                            <Icon
+                                aria-label=""
+                                icon="facebook"
+                                className="not-sr-only"
+                            />
+                        </a>
+                        <a
+                            href="#"
+                            aria-label="Enlace a la red social LinkedIn"
+                        >
+                            <Icon icon="linkedin" className="not-sr-only" />
+                        </a>
                     </div>
                 </div>
             </Container>
