@@ -27,7 +27,7 @@ export const HowWeWorkStrategy = () => {
             <div
                 aria-hidden
                 className="absolute h-full top-0 right-0 w-[20vw] scale-x-[-1] lg:left-auto lg:right-0
-                    lg:scale-x-100 hidden lg:block"
+                    lg:scale-x-100 hidden lg:block overflow-hidden"
             >
                 <Image
                     src={righthandImage}
@@ -36,7 +36,7 @@ export const HowWeWorkStrategy = () => {
                     height={313}
                     className="absolute bottom-0 right-0 object-cover max-h-[313px] object-left-top "
                 />
-                <HowWeWorkLineRight className="absolute left-[40%] bottom-14 h-[70%] overflow-visible " />
+                <HowWeWorkLineRight className="absolute left-[20%] bottom-14 h-[70%] overflow-visible " />
             </div>
             <Container className=" flex items-center flex-col gap-16 text-center max-w-3xl relative">
                 <Heading size="big" tag="h2">
