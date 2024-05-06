@@ -17,7 +17,7 @@ import { LogoImage } from './logo-image'
 
 export const ReliabilitySection = () => {
     return (
-        <section>
+        <section className="isolate">
             <Container className="flex flex-col lg:flex-row gap-8">
                 <Card
                     color="primary"
