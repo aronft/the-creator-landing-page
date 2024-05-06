@@ -38,3 +38,14 @@ p {
   isolation: isolate;
 }  
 
+
+/* global styles */
+
+.drop-shadow-section-image {
+    filter: drop-shadow(-5px -2px 1px theme('colors.primary-shadow')) drop-shadow(5px -2px 1px theme('colors.primary-shadow'));
+}
+
+
+.mask-image {
+    mask-image:linear-gradient(to bottom, theme(colors.tertiary) 70%, transparent 100%)
+}

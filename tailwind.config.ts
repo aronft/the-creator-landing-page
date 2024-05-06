@@ -18,6 +18,7 @@ const config: Config = {
         colors: {
             primary: '#FF60E6',
             'primary-alt': '#FFADF2',
+            'primary-shadow': '#ff5ae3',
             secondary: '#1F392C',
             tertiary: '#F8F5F0',
             white: '#fff',
