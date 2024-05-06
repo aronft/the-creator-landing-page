@@ -9,7 +9,6 @@ import figmaLogo from '@/assets/how-we-work-section/figma.png'
 
 export const Characteristics = () => {
     const [data1, data2, data3] = DATA.characteristics
-    console.log(data1, data2, data3)
     return (
         <section aria-label="charecteristics" className="py-16">
             <Container className="max-w-5xl">
