@@ -18,7 +18,6 @@ export const UiList = ({
     direction = 'horizontal',
     ...props
 }: UiListProps) => {
-    console.log(direction)
     return (
         <ul
             className={cn('flex gap-8', directionClasses[direction], className)}
