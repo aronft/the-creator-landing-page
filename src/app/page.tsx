@@ -7,7 +7,7 @@ import { ReliabilitySection } from '@/components/sections/reliability-section/re
 export default function Home() {
     return (
         <>
-            <Header />
+            <Header className="z-10" />
             <main>
                 <Hero />
                 <HowWeWork />

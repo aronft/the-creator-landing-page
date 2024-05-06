@@ -12,9 +12,9 @@ import { HeroLineLeft } from '@/components/vectors/hero-line-left'
 import { HeroLineRight } from '@/components/vectors/hero-line-right'
 import { SemiCircle } from '@/components/vectors/semi-circle'
 
-export const Hero = () => {
+export const Hero = ({ className }: { className?: string }) => {
     return (
-        <section className="py-32 relative">
+        <section className="py-32 relative isolate">
             <div
                 className="top-0 left-0 absolute not-sr-only h-full  "
                 aria-hidden
