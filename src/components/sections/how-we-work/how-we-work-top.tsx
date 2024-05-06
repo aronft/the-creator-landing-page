@@ -32,7 +32,7 @@ export const HowWeWorkTop = () => {
                 />
                 <Image
                     src={ytbimg}
-                    className="absolute top-8 right-[20%] w-24 h-20 aspect-square rotate-[20deg]"
+                    className="absolute top-8 right-[20%] w-24 aspect-[64/45] rotate-[20deg]"
                     alt=""
                     width={106}
                     height={76}
@@ -40,7 +40,7 @@ export const HowWeWorkTop = () => {
                 />
                 <Image
                     src={ytbimg}
-                    className="absolute bottom-14 h-9 left-[9%] w-14 aspect-square -rotate-[19deg]"
+                    className="absolute bottom-14 left-[9%] w-14 aspect-[64/45] -rotate-[19deg]"
                     alt=""
                     width={54}
                     height={39}

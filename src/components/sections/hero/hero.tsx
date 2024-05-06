@@ -76,7 +76,8 @@ export const Hero = ({ className }: { className?: string }) => {
             <Image
                 src={thinkimg}
                 alt="Light bulb image"
-                className="absolute hidden lg:block w-11 aspect-[2/3] left-[10vw] top-[33%] rotate-[15deg]"
+                className="absolute hidden lg:block w-11 aspect-[24/41] left-[10vw] top-[33%]
+                    rotate-[15deg]"
                 width={44}
                 height={69}
                 aria-hidden
