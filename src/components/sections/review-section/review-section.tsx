@@ -1,15 +1,13 @@
+'use client'
 import { Heading } from '@/components/ui/atoms/heading/heading'
 import { Container } from '@/components/ui/objects/container/container'
 import Image from 'next/image'
 import titleImage1 from '@/assets/review-section/avatar-4.png'
 import titleImage2 from '@/assets/review-section/avatar-3.png'
 import titleImage3 from '@/assets/review-section/avatar-5.png'
-import { SemiCircle } from '@/components/vectors/semi-circle'
 import { SemiCircleAlt } from '@/components/vectors/semi-circle-alt'
 import { Underlined } from '@/components/vectors/underlined'
-import { Button } from '@/components/ui/atoms/button/button'
-import { ArrowLeft } from '@/components/icons/arrow-left'
-import { Icon } from '@/components/ui/atoms/icon/icon'
+import { Reviews } from './reviews'
 
 export const ReviewSection = () => {
     return (
@@ -72,23 +70,8 @@ export const ReviewSection = () => {
                     </span>{' '}
                     for you
                 </Heading>
-                <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-                    <p className="text-3xl font-bold text-center md:text-start max-w-md ">
-                        See what our famous clients write about us:
-                    </p>
 
-                    <div className="flex gap-4">
-                        <Button
-                            className="h-10 w-10 rounded-full p-2 flex items-center justify-center bg-transparent
-                                border-primary border"
-                        >
-                            <Icon icon={'arrowLeft'} className="w-6" />
-                        </Button>
-                        <Button className="h-10 w-10 rounded-full p-2 flex items-center justify-center bg-primary">
-                            <Icon icon={'arrowRight'} className="w-6" />
-                        </Button>
-                    </div>
-                </div>
+                <Reviews />
             </Container>
         </section>
     )
