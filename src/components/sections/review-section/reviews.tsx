@@ -78,6 +78,16 @@ export const Reviews = () => {
                 onInit={(swiper) => {
                     handleIndex(swiper)
                 }}
+                breakpoints={{
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                }}
             >
                 {reviews.map((review, index) => (
                     <ReviewCard
