@@ -4,11 +4,16 @@ import { Heading } from '@/components/ui/atoms/heading/heading'
 import { Container } from '@/components/ui/objects/container/container'
 import { UnderLineAlt } from '@/components/vectors/underline-alt'
 import { Partners } from './partners'
+import { PartnerSectionLine } from '@/components/vectors/partner-section-line'
 
 export const PartnersSection = () => {
     return (
         <section className="py-16">
-            <Container className="flex flex-col items-center gap-16">
+            <PartnerSectionLine
+                className="absolute w-[50%] -left-5 max-w-2xl hidden lg:block"
+                aria-hidden
+            />
+            <Container className="flex flex-col items-center gap-16 relative">
                 <Heading className="max-w-4xl text-center" size="big" tag="h2">
                     Contact us today to explore partnership{' '}
                     <span className="inline-block relative">
