@@ -26,8 +26,10 @@ const ICONS = {
     arrowRight: ArrowRight,
 } as const
 
+export type IconTypes = keyof typeof ICONS
+
 interface IconProps extends SvgProps {
-    icon: keyof typeof ICONS
+    icon: IconTypes
     size?: Sizes
 }
 
@@ -42,5 +44,5 @@ export const Icon = ({
     ...props
 }: IconProps) => {
     const Tag = ICONS[icon]
-    return <Tag className={cn('', className, sizesClasses[size])} {...props} />
+    return <Tag className={cn('', sizesClasses[size], className)} {...props} />
 }
