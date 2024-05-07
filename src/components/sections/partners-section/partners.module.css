@@ -1,0 +1,10 @@
+.swiper-slide {
+    width: 80%;
+}
+
+
+.swiper {
+     margin-right: calc((100vw - 100%) / 2 * -1);
+    /* margin-left: calc((100vw - 100%) / 2* -1); */
+    width: calc(100% + (40vw - 100%) / 2 );
+}
