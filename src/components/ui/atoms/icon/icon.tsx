@@ -8,6 +8,8 @@ import { LinkedIn } from '@/components/icons/linked-in'
 import { X } from '@/components/icons/x'
 import { List } from '@/components/icons/list'
 import { cn } from '@/utils/class-names'
+import { ArrowLeft } from '@/components/icons/arrow-left'
+import { ArrowRight } from '@/components/vectors/arrow-right'
 
 type Sizes = 'medium'
 
@@ -20,6 +22,8 @@ const ICONS = {
     linkedin: LinkedIn,
     x: X,
     list: List,
+    arrowLeft: ArrowLeft,
+    arrowRight: ArrowRight,
 } as const
 
 interface IconProps extends SvgProps {

@@ -14,7 +14,7 @@ export interface HeadingProps extends HTMLAttributes<{}> {
 const HeadingSizesClasses: Record<HeadingSizes, string> = {
     small: 'text-4xl font-bold',
     medium: 'text-5xl font-bold',
-    big: 'text-6xl font-bold',
+    big: 'text-4xl md:text-6xl font-bold',
     large: 'text-5xl md:text-9xl font-bold',
 }
 
