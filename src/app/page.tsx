@@ -3,6 +3,7 @@ import { Header } from '@/components/sections/header/header'
 import { Hero } from '@/components/sections/hero/hero'
 import { HowWeWork } from '@/components/sections/how-we-work/how-we-work'
 import { ReliabilitySection } from '@/components/sections/reliability-section/reliability-section'
+import { ReviewSection } from '@/components/sections/review-section/review-section'
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
             <main>
                 <Hero />
                 <HowWeWork />
+                <ReviewSection />
                 <ReliabilitySection />
             </main>
             <Footer />
