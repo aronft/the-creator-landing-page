@@ -14,6 +14,7 @@ export const Button = ({
     children,
     className,
     color = 'primary',
+    onClick,
     ...props
 }: ButtonProps) => {
     return (
@@ -23,6 +24,7 @@ export const Button = ({
                 impactClasses[color],
                 className
             )}
+            onClick={onClick}
             {...props}
         >
             {children}
