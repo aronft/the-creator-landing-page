@@ -1,7 +1,7 @@
 import { cn } from '@/utils/class-names'
 import { Characteristics } from './characteristics'
 import { HowWeWorkStrategy } from './how-we-work-strategy'
-import { HowWeWorkTop } from './how-we-work-top'
+import { HowWeWorkTop } from './how-we-worpk-top/how-we-work-top'
 
 export const HowWeWork = ({ className }: { className?: string }) => {
     return (
