@@ -28,6 +28,7 @@ export const ReviewSection = () => {
                         height={64}
                         alt=""
                         aria-hidden
+                        loading="lazy"
                         className="aspect-square rounded-2xl inline-block mx-4"
                     />
                     <span>over 3,000 creators how to</span>
@@ -37,6 +38,7 @@ export const ReviewSection = () => {
                         src={titleImage2}
                         alt=""
                         aria-hidden
+                        loading="lazy"
                         className="aspect-square rounded-2xl inline-block mx-4"
                     />
                     <span className="relative inline-block">
@@ -52,6 +54,7 @@ export const ReviewSection = () => {
                         src={titleImage3}
                         alt=""
                         aria-hidden
+                        loading="lazy"
                         className="aspect-square rounded-2xl inline-block mx-4"
                     />
                 </Heading>
