@@ -28,20 +28,22 @@ export const Footer = () => {
 
                     <div className="flex flex-wrap gap-4 justify-center">
                         <a
-                            href="#"
+                            href="https://www.instagram.com"
+                            target="_blank"
                             aria-label="Enlace a la red social Instagram"
                         >
                             <Icon icon="instagram" className="not-sr-only" />
                         </a>
-                        <a aria-label="Enlace a la red social Facebook">
-                            <Icon
-                                aria-label=""
-                                icon="facebook"
-                                className="not-sr-only"
-                            />
+                        <a
+                            aria-label="Enlace a la red social Facebook"
+                            target="_blank"
+                            href="https://www.facebook.com"
+                        >
+                            <Icon icon="facebook" className="not-sr-only" />
                         </a>
                         <a
-                            href="#"
+                            href="https://www.linkedin.com"
+                            target="_blank"
                             aria-label="Enlace a la red social LinkedIn"
                         >
                             <Icon icon="linkedin" className="not-sr-only" />
