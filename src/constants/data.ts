@@ -6,6 +6,12 @@ import reviewAvatar2 from '@/assets/review-section/avatar-1.png'
 import reviewAvatar3 from '@/assets/review-section/avatar-2.png'
 import { IconTypes } from '@/components/ui/atoms/icon/icon'
 
+interface Menu {
+    id: string
+    name: string
+    url: string
+}
+
 interface Characteristic {
     src: string
     title: string
@@ -33,9 +39,32 @@ interface Data {
     characteristics: Characteristic[]
     reviews: Review[]
     partners: Partner[]
+    menu: Menu[]
 }
 
 export const DATA: Data = {
+    menu: [
+        {
+            id: crypto.randomUUID(),
+            name: 'Partners',
+            url: 'partners-section',
+        },
+        {
+            id: crypto.randomUUID(),
+            name: 'How we Work',
+            url: 'how-we-work-section',
+        },
+        {
+            id: crypto.randomUUID(),
+            name: 'Review',
+            url: 'review-section',
+        },
+        {
+            id: crypto.randomUUID(),
+            name: 'Charity',
+            url: 'charity-section',
+        },
+    ],
     characteristics: [
         {
             title: '1# Research & Analysis',
