@@ -19,19 +19,22 @@ export const HowWeWorkTop = () => {
                 <PrincipalImage />
                 <Image
                     src={ytbimg}
-                    className="absolute top-8 right-[20%] w-24 aspect-[64/45] rotate-[20deg]"
+                    className="absolute w-10 top-8 right-[20%] sm:w-24 aspect-[64/45] rotate-[20deg]"
                     alt=""
                     width={106}
                     height={76}
                     aria-hidden
+                    data-id="how-to-work-top-youtube-1"
                 />
                 <Image
                     src={ytbimg}
-                    className="absolute bottom-14 left-[9%] w-14 aspect-[64/45] -rotate-[19deg]"
+                    className="absolute w-8 bottom-4 left-10 sm:bottom-14 sm:left-[9%] sm:w-14 aspect-[64/45]
+                        -rotate-[19deg]"
                     alt=""
                     width={54}
                     height={39}
                     aria-hidden
+                    data-id="work-youtube-2"
                 />
                 <Image
                     src={ytbimg}
@@ -39,6 +42,7 @@ export const HowWeWorkTop = () => {
                     alt=""
                     width={32}
                     aria-hidden
+                    data-id="work-youtube-3"
                 />
                 <Image
                     src={ytbimg}
@@ -46,6 +50,7 @@ export const HowWeWorkTop = () => {
                     alt=""
                     width={32}
                     aria-hidden
+                    data-id="work-youtube-4"
                 />
                 <Image
                     src={facebookimg}
@@ -56,11 +61,13 @@ export const HowWeWorkTop = () => {
                 />
                 <Image
                     src={facebookimg}
-                    className="absolute top-[45%] right-[20%] w-8 h-8 aspect-square rotate-[21deg]"
+                    className="absolute left-[10%] sm:left-auto sm:top-[45%] sm:right-[20%] w-8 h-8
+                        aspect-square rotate-[21deg]"
                     alt=""
                     width={32}
                     height={32}
                     aria-hidden
+                    data-id="work-facebook-2"
                 />
 
                 <Image
@@ -74,21 +81,21 @@ export const HowWeWorkTop = () => {
                 />
                 <Image
                     src={instagramimg}
-                    className="absolute bottom-[40%] left-[15%] w-11 h-11 aspect-square -rotate-[115deg]"
+                    className="absolute w-8 bottom-[40%] left-[15%] sm:w-11 aspect-square -rotate-[115deg]"
                     alt=""
                     width={64}
                     height={63}
                     aria-hidden
-                    id="work-instagram-2"
+                    data-id="work-instagram-2"
                 />
                 <Image
                     src={instagramimg}
-                    className="absolute bottom-[10%] right-[20%] w-16 aspect-square rotate-[17deg]"
+                    className="absolute bottom-[10%] right-[20%] w-10 sm:w-16 aspect-square rotate-[17deg]"
                     alt=""
                     width={62}
                     height={60}
                     aria-hidden
-                    id="work-instagram-3"
+                    data-id="work-instagram-3"
                 />
                 <Image
                     src={instagramimg}
@@ -97,7 +104,7 @@ export const HowWeWorkTop = () => {
                     width={62}
                     height={60}
                     aria-hidden
-                    id="work-instagram-4"
+                    data-id="work-instagram-4"
                 />
             </div>
         </Container>
