@@ -11,10 +11,10 @@ export const Characteristics = () => {
     const [data1, data2, data3] = DATA.characteristics
     return (
         <section aria-label="charecteristics" className="py-16">
-            <Container className="max-w-5xl">
+            <Container className="max-w-5xl text-center md:text-start">
                 <UiList direction="vertical" className="gap-16">
-                    <article className="flex gap-8 flex-col md:flex-row">
-                        <div className="flex-1 flex flex-col gap-4 text-xl leading-8">
+                    <article className="flex gap-8 flex-col md:flex-row items-center md:items-start">
+                        <div className="flex-1 flex flex-col gap-8 text-xl leading-8 md:text-left max-w-md md:max-w-none">
                             <Heading size="small" tag="h3">
                                 {data1.title}
                             </Heading>
@@ -26,6 +26,7 @@ export const Characteristics = () => {
                                 height={515}
                                 src={data1.src}
                                 alt={data1.title}
+                                loading="lazy"
                                 className="drop-shadow-section-image aspect-[3/2] min-h-[515px] mask-image object-cover "
                             />
                             <Image
@@ -48,8 +49,8 @@ export const Characteristics = () => {
                             />
                         </div>
                     </article>
-                    <article className="flex gap-8 md:flex-row-reverse flex-col">
-                        <div className="flex-1 flex flex-col gap-4 text-xl leading-8 ">
+                    <article className="flex gap-8 md:flex-row-reverse flex-col items-center md:items-start">
+                        <div className="flex-1 flex flex-col gap-8 text-xl leading-8 max-w-md md:max-w-none">
                             <Heading size="small" tag="h3">
                                 {data2.title}
                             </Heading>
@@ -61,6 +62,7 @@ export const Characteristics = () => {
                                 height={431}
                                 src={data2.src}
                                 alt={data2.title}
+                                loading="lazy"
                                 className="drop-shadow-section-image object-none [object-position:-60px] aspect-[96/103]
                                     mask-image"
                             />
@@ -75,8 +77,8 @@ export const Characteristics = () => {
                             />
                         </div>
                     </article>
-                    <article className="flex gap-8 md:flex-row flex-col">
-                        <div className="flex-1 flex flex-col gap-4 text-xl leading-8 ">
+                    <article className="flex gap-8 md:flex-row flex-col items-center md:items-start">
+                        <div className="flex-1 flex flex-col gap-4 text-xl leading-8 max-w-md md:max-w-none">
                             <Heading size="small" tag="h3">
                                 {data3.title}
                             </Heading>
@@ -88,6 +90,7 @@ export const Characteristics = () => {
                                 height={431}
                                 src={data3.src}
                                 alt={data3.title}
+                                loading="lazy"
                                 className="drop-shadow-section-image object-cover aspect-[96/103] mask-image"
                             />
                             <Image
