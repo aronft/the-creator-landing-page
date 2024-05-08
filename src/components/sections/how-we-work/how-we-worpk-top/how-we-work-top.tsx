@@ -1,11 +1,10 @@
 import { Heading } from '@/components/ui/atoms/heading/heading'
 import { Container } from '@/components/ui/objects/container/container'
-import { cn } from '@/utils/class-names'
 import Image from 'next/image'
-import section1Girl from '@/assets/how-we-work-section/girl-0.png'
 import facebookimg from '@/assets/fb.webp'
 import instagramimg from '@/assets/inst.webp'
 import ytbimg from '@/assets/ytb.webp'
+import { PrincipalImage } from './principal-image'
 
 export const HowWeWorkTop = () => {
     return (
@@ -17,19 +16,7 @@ export const HowWeWorkTop = () => {
                 Making it big on any Platform is tougher than you think
             </Heading>
             <div className="flex flex-col items-center relative w-full max-w-4xl">
-                <div
-                    className="w-[20%] h-[20%] md:w-[25%] absolute top-[25%] left-[25%] bg-primary-shadow"
-                    aria-hidden
-                ></div>
-                <Image
-                    src={section1Girl}
-                    width={773}
-                    height={515}
-                    className={cn(
-                        'aspect-[250/167] relative drop-shadow-section-image mask-image'
-                    )}
-                    alt="A girl impresed with her hand in his forhead"
-                />
+                <PrincipalImage />
                 <Image
                     src={ytbimg}
                     className="absolute top-8 right-[20%] w-24 aspect-[64/45] rotate-[20deg]"
