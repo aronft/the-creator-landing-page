@@ -1,6 +1,7 @@
 import { SubscriptionButton } from '@/components/common/subscripction-button'
 import { Heading } from '@/components/ui/atoms/heading/heading'
 import { Icon } from '@/components/ui/atoms/icon/icon'
+import { Menu } from '@/components/ui/molecules/menu/menu'
 import { Container } from '@/components/ui/objects/container/container'
 import { UiList } from '@/components/ui/objects/ui-list/ui-list'
 
@@ -23,20 +24,7 @@ export const Footer = () => {
                         <span className="text-3xl">©</span>
                         <span>Copywriting</span>
                     </p>
-                    <UiList className="justify-center lg:justify-start text-xl">
-                        <a href="#" className="font-medium text-secondary">
-                            Partners
-                        </a>
-                        <a href="#" className="font-medium text-secondary">
-                            How we Work
-                        </a>
-                        <a href="#" className="font-medium text-secondary">
-                            Review
-                        </a>
-                        <a href="#" className="font-medium text-secondary">
-                            Charity
-                        </a>
-                    </UiList>
+                    <Menu className="justify-center lg:justify-start text-xl" />
 
                     <div className="flex flex-wrap gap-4 justify-center">
                         <a

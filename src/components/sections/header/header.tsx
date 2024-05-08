@@ -2,8 +2,8 @@
 import { Button } from '@/components/ui/atoms/button/button'
 import { Icon } from '@/components/ui/atoms/icon/icon'
 import { Logo } from '@/components/ui/atoms/logo/logo'
+import { Menu } from '@/components/ui/molecules/menu/menu'
 import { Container } from '@/components/ui/objects/container/container'
-import { UiList } from '@/components/ui/objects/ui-list/ui-list'
 import { cn } from '@/utils/class-names'
 import React, { useState } from 'react'
 
@@ -11,57 +11,36 @@ interface HeaderProps extends React.ComponentPropsWithoutRef<'header'> {}
 
 export const Header = ({ className, ...props }: HeaderProps) => {
     const [isOpen, setIsOpen] = useState(false)
+    const handleMenuVisibilty = (state: boolean) => {
+        setIsOpen(state)
+    }
     return (
         <header className={cn(' relative py-8', className)} {...props}>
             <Container className="flex justify-between items-center">
                 <Logo className="z-10" />
+                {/* desktop menu */}
                 <div
                     className={cn(
-                        'absolute top-0 left-0 right-0 w-dvw h-dvh lg:static lg:w-auto lg:h-auto lg:flex'
+                        `bg-tertiary shadow-lg flex-col gap-10 absolute top-full max-w-7xl px-4 pl-
+                        left-0 right-0 w-full pb-14 flex lg:hidden`,
+                        { 'hidden ': !isOpen }
                     )}
                 >
-                    <div
-                        className={cn(
-                            'absolute w-full h-full bg-tertiary hidden lg:hidden',
-                            { block: isOpen }
-                        )}
-                    ></div>
-                    <UiList
-                        className={cn(
-                            'lg:flex-row lg:mt-0 lg:mb-0 hidden lg:flex',
-                            {
-                                'relative flex-col mt-28 mb-8 block': isOpen,
-                            }
-                        )}
-                    >
-                        <a href="#" className="font-medium text-secondary">
-                            Partners
-                        </a>
-                        <a href="#" className="font-medium text-secondary">
-                            How we Work
-                        </a>
-                        <a href="#" className="font-medium text-secondary">
-                            Review
-                        </a>
-                        <a href="#" className="font-medium text-secondary">
-                            Charity
-                        </a>
-                    </UiList>
-                    <Button
-                        className={cn(
-                            'capitalize relative w-full hidden lg:hidden',
-                            { block: isOpen }
-                        )}
-                    >
-                        Join the creator
+                    <Menu className={cn('flex flex-col lg:flex-row', {})} />
+                    <Button className="capitalize max-w-xl mx-auto w-full">
+                        Join the creators
                     </Button>
                 </div>
-                <Button className="capitalize relative hidden lg:block">
-                    Join the creator
+                <Button className="capitalize hidden lg:block ">
+                    Join the creators
                 </Button>
+
                 <Icon
+                    aria-label={
+                        isOpen ? 'Close menu button' : 'Open menu button'
+                    }
                     icon={isOpen ? 'x' : 'list'}
-                    className="lg:hidden z-10"
+                    className="lg:hidden z-10 hover:cursor-pointer"
                     onClick={() => setIsOpen(!isOpen)}
                 />
             </Container>
