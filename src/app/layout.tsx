@@ -31,7 +31,10 @@ export default function RootLayout({
                     property="og:url"
                     content="https://the-creator-page.vercel.app"
                 />
-                <meta property="og:image" content="" />
+                <meta
+                    property="og:image"
+                    content="https://the-creator-page.vercel.app/open-graph-web-image.png"
+                />
             </head>
             <body className="bg-tertiary text-secondary">{children}</body>
         </html>
