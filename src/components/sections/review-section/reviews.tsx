@@ -49,15 +49,19 @@ export const Reviews = () => {
                 <div className="flex gap-4 ml-auto">
                     <Button
                         onClick={() => swiperRef.current?.slidePrev()}
+                        aria-label="prev carousel button"
+                        disabled={!isPrevEnable}
                         className={cn(
                             'h-10 w-10 rounded-full p-2 flex items-center justify-center bg-transparent',
                             { ' bg-primary ': isPrevEnable },
                             { ' border-primary border ': !isPrevEnable }
                         )}
                     >
-                        <Icon icon={'arrowLeft'} className="w-6" />
+                        <Icon icon={'arrowLeft'} className="w-6 not-sr-only" />
                     </Button>
                     <Button
+                        aria-label="next carousel button"
+                        disabled={!isNextEnable}
                         onClick={() => swiperRef.current?.slideNext()}
                         className={cn(
                             'h-10 w-10 rounded-full p-2 flex items-center justify-center bg-transparent',
@@ -65,7 +69,7 @@ export const Reviews = () => {
                             { ' border-primary border ': !isNextEnable }
                         )}
                     >
-                        <Icon icon={'arrowRight'} className="w-6" />
+                        <Icon icon={'arrowRight'} className="w-6 not-sr-only" />
                     </Button>
                 </div>
             </div>
