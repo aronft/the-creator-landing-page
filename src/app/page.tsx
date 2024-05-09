@@ -12,10 +12,10 @@ export default function Home() {
             <Header className="z-10" />
             <main className="overflow-x-hidden">
                 <Hero />
-                <PartnersSection />
-                <HowWeWork />
-                <ReviewSection />
-                <ReliabilitySection />
+                <PartnersSection id="partners-section" />
+                <HowWeWork id="how-we-work-section" />
+                <ReviewSection id="review-section" />
+                <ReliabilitySection id="charity-section" />
             </main>
             <Footer />
         </>

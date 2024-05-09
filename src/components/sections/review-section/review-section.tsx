@@ -8,10 +8,14 @@ import titleImage3 from '@/assets/review-section/avatar-5.png'
 import { SemiCircleAlt } from '@/components/vectors/semi-circle-alt'
 import { Underlined } from '@/components/vectors/underlined'
 import { Reviews } from './reviews'
+import {
+    SectionLayout,
+    SectionLayoutProps,
+} from '@/components/ui/layout/section-layout'
 
-export const ReviewSection = () => {
+export const ReviewSection = ({ ...props }: SectionLayoutProps) => {
     return (
-        <section className="py-16">
+        <SectionLayout {...props}>
             <Container className="flex flex-col gap-16">
                 <p className="text-center text-xl">
                     Hear from our customers from Top YouTube Channel
@@ -28,6 +32,7 @@ export const ReviewSection = () => {
                         height={64}
                         alt=""
                         aria-hidden
+                        loading="lazy"
                         className="aspect-square rounded-2xl inline-block mx-4"
                     />
                     <span>over 3,000 creators how to</span>
@@ -37,6 +42,7 @@ export const ReviewSection = () => {
                         src={titleImage2}
                         alt=""
                         aria-hidden
+                        loading="lazy"
                         className="aspect-square rounded-2xl inline-block mx-4"
                     />
                     <span className="relative inline-block">
@@ -52,6 +58,7 @@ export const ReviewSection = () => {
                         src={titleImage3}
                         alt=""
                         aria-hidden
+                        loading="lazy"
                         className="aspect-square rounded-2xl inline-block mx-4"
                     />
                 </Heading>
@@ -73,6 +80,6 @@ export const ReviewSection = () => {
 
                 <Reviews />
             </Container>
-        </section>
+        </SectionLayout>
     )
 }

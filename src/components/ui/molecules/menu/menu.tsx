@@ -4,7 +4,6 @@ import { cn } from '@/utils/class-names'
 
 export const Menu = ({ className }: { className?: string }) => {
     const menu = DATA.menu
-    console.log(className)
     return (
         <UiList className={cn('', className)}>
             {menu.map((item) => (
