@@ -6,11 +6,12 @@ import Image from 'next/image'
 import thinkImage from '@/assets/think.webp'
 import puzzlesImage from '@/assets/how-we-work-section/puzzle.png'
 import figmaLogo from '@/assets/how-we-work-section/figma.png'
+import { cn } from '@/utils/class-names'
 
-export const Characteristics = () => {
+export const Characteristics = ({ className }: { className?: string }) => {
     const [data1, data2, data3] = DATA.characteristics
     return (
-        <section aria-label="charecteristics" className="py-16">
+        <section aria-label="charecteristics" className={cn(className)}>
             <Container className="max-w-5xl text-center md:text-start">
                 <UiList direction="vertical" className="gap-16">
                     <article className="flex gap-8 flex-col md:flex-row items-center md:items-start">

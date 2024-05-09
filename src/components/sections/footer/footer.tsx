@@ -3,7 +3,6 @@ import { Heading } from '@/components/ui/atoms/heading/heading'
 import { Icon } from '@/components/ui/atoms/icon/icon'
 import { Menu } from '@/components/ui/molecules/menu/menu'
 import { Container } from '@/components/ui/objects/container/container'
-import { UiList } from '@/components/ui/objects/ui-list/ui-list'
 
 export const Footer = () => {
     return (

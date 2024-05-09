@@ -6,10 +6,11 @@ import lefthandImage from '@/assets/how-we-work-section/how-we-work-hand-left.we
 import righthandImage from '@/assets/how-we-work-section/how-we-work-hand-right.webp'
 import { HowWeWorkLineLeft } from '@/components/vectors/how-we-work-line-left'
 import { HowWeWorkLineRight } from '@/components/vectors/how-we-work-line-right'
+import { cn } from '@/utils/class-names'
 
-export const HowWeWorkStrategy = () => {
+export const HowWeWorkStrategy = ({ className }: { className?: string }) => {
     return (
-        <section className="py-16 relative">
+        <section className={cn('relative', className)}>
             <div
                 aria-hidden
                 className="absolute right-0 scale-x-[-1] top-0 lg:right-auto lg:left-0 lg:scale-x-100
