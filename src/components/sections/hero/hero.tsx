@@ -13,7 +13,9 @@ import { HeroLineRight } from '@/components/vectors/hero-line-right'
 import { SemiCircle } from '@/components/vectors/semi-circle'
 import { SectionLayout } from '@/components/ui/layout/section-layout'
 import { cn } from '@/utils/class-names'
+import dynamic from 'next/dynamic'
 
+//
 export const Hero = ({ className }: { className?: string }) => {
     return (
         <SectionLayout className={cn('relative isolate', className)}>
