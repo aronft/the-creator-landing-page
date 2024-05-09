@@ -5,7 +5,6 @@ import { HowWeWork } from '@/components/sections/how-we-work/how-we-work'
 import { PartnersSection } from '@/components/sections/partners-section/partners-section'
 import { ReliabilitySection } from '@/components/sections/reliability-section/reliability-section'
 import { ReviewSection } from '@/components/sections/review-section/review-section'
-import { DATA } from '@/constants/data'
 
 export default function Home() {
     return (
