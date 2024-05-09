@@ -20,7 +20,7 @@ export const Container = ({
     return (
         <Tag
             className={cn(
-                'max-w-7xl p-4 mx-auto w-full',
+                'max-w-7xl px-4 mx-auto w-full',
                 { 'border-primary border-4 border-dotted': isPlayground },
                 className
             )}
