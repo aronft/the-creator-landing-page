@@ -26,11 +26,12 @@ export const Header = ({ className, ...props }: HeaderProps) => {
                         { 'hidden ': !isOpen }
                     )}
                 >
-                    <Menu className={cn('flex flex-col lg:flex-row', {})} />
+                    <Menu className={cn('flex flex-col', {})} />
                     <Button className="capitalize max-w-xl mx-auto w-full">
                         Join the creators
                     </Button>
                 </div>
+                <Menu className="hidden lg:flex" />
                 <Button className="capitalize hidden lg:block ">
                     Join the creators
                 </Button>
