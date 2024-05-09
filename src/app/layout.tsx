@@ -7,6 +7,9 @@ import { cn } from '@/utils/class-names'
 export const metadata: Metadata = {
     title: 'The Creator',
     description: `Ready to light up your brand's story? Our dynamic team merges strategy, design, and tech to bring your vision to life. Let's collaborate and make your mark!`,
+    metadataBase: new URL(
+        'https://the-creator-page.vercel.app/opengraph-image.png'
+    ),
 }
 
 export default function RootLayout({
@@ -31,7 +34,14 @@ export default function RootLayout({
                     property="og:url"
                     content="https://the-creator-page.vercel.app"
                 />
-                <meta property="og:image" content="" />
+                <meta
+                    property="og:image"
+                    content="https://the-creator-page.vercel.app/opengraph-image.png"
+                />
+                <meta
+                    property="og:image:alt"
+                    content="The Creator - Hero section"
+                />
             </head>
             <body className="bg-tertiary text-secondary">{children}</body>
         </html>
