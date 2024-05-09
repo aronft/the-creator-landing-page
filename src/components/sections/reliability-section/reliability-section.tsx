@@ -14,10 +14,14 @@ import logo9 from '@/assets/charity-section/Logo-9.png'
 import logo10 from '@/assets/charity-section/Logo-10.png'
 
 import { LogoImage } from './logo-image'
+import {
+    SectionLayout,
+    SectionLayoutProps,
+} from '@/components/ui/layout/section-layout'
 
-export const ReliabilitySection = () => {
+export const ReliabilitySection = ({ ...props }: SectionLayoutProps) => {
     return (
-        <section className="isolate">
+        <SectionLayout {...props}>
             <Container className="flex flex-col lg:flex-row gap-8">
                 <Card
                     color="primary"
@@ -55,6 +59,6 @@ export const ReliabilitySection = () => {
                     </p>
                 </Card>
             </Container>
-        </section>
+        </SectionLayout>
     )
 }

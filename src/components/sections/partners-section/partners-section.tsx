@@ -5,10 +5,14 @@ import { Container } from '@/components/ui/objects/container/container'
 import { UnderLineAlt } from '@/components/vectors/underline-alt'
 import { Partners } from './partners'
 import { PartnerSectionLine } from '@/components/vectors/partner-section-line'
+import {
+    SectionLayout,
+    SectionLayoutProps,
+} from '@/components/ui/layout/section-layout'
 
-export const PartnersSection = () => {
+export const PartnersSection = ({ ...props }: SectionLayoutProps) => {
     return (
-        <section className="py-16">
+        <SectionLayout {...props}>
             <PartnerSectionLine
                 className="absolute w-[50%] -left-5 max-w-2xl hidden lg:block"
                 aria-hidden
@@ -36,6 +40,6 @@ export const PartnersSection = () => {
                     <Partners className="w-full lg:w-1/2" />
                 </Card>
             </Container>
-        </section>
+        </SectionLayout>
     )
 }

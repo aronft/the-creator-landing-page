@@ -5,12 +5,13 @@ import facebookimg from '@/assets/fb.webp'
 import instagramimg from '@/assets/inst.webp'
 import ytbimg from '@/assets/ytb.webp'
 import { PrincipalImage } from './principal-image'
+import { cn } from '@/utils/class-names'
 
-export const HowWeWorkTop = () => {
+export const HowWeWorkTop = ({ className }: { className?: string }) => {
     return (
         <Container
             tag="section"
-            className="flex flex-col items-center gap-16 py-16"
+            className={cn('flex flex-col items-center gap-16', className)}
         >
             <Heading tag="h2" size="big" className="text-center">
                 Making it big on any Platform is tougher than you think

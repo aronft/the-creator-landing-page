@@ -11,10 +11,12 @@ import ytbimg from '@/assets/ytb.webp'
 import { HeroLineLeft } from '@/components/vectors/hero-line-left'
 import { HeroLineRight } from '@/components/vectors/hero-line-right'
 import { SemiCircle } from '@/components/vectors/semi-circle'
+import { SectionLayout } from '@/components/ui/layout/section-layout'
+import { cn } from '@/utils/class-names'
 
 export const Hero = ({ className }: { className?: string }) => {
     return (
-        <section className="py-32 relative isolate">
+        <SectionLayout className={cn('relative isolate', className)}>
             <div
                 className="top-0 left-0 absolute not-sr-only h-full  "
                 aria-hidden
@@ -109,6 +111,6 @@ export const Hero = ({ className }: { className?: string }) => {
                 </p>
                 <SubscriptionButton className="w-full max-w-xl" />
             </Container>
-        </section>
+        </SectionLayout>
     )
 }
