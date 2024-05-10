@@ -90,8 +90,8 @@ export const Hero = ({ className }: { className?: string }) => {
             <Image
                 src={thinkimg}
                 alt="Light bulb image"
-                className="absolute w-16 object-cover top-0 left-[50%] -translate-x-1/2 lg:right-[10vw]
-                    lg:top-[33%] lg:-rotate-[9deg] lg:translate-x-0 lg:left-auto"
+                className="absolute w-10 lg:w-16 object-cover top-0 left-[50%] -translate-x-1/2
+                    lg:right-[10vw] lg:top-[33%] lg:-rotate-[9deg] lg:translate-x-0 lg:left-auto"
                 width={66}
                 height={105}
                 aria-hidden
