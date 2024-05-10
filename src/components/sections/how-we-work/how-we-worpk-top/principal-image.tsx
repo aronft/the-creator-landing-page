@@ -15,7 +15,7 @@ export const PrincipalImage = () => {
         >
             <div
                 className={cn(
-                    "w-[20%] h-[20%] md:w-[25%] absolute top-[25%] left-[25%] bg-primary-shadow"
+                    'w-[20%] h-[20%] md:w-[25%] absolute top-[25%] left-[25%] bg-primary-shadow'
                 )}
                 aria-hidden
             ></div>
@@ -24,7 +24,18 @@ export const PrincipalImage = () => {
                 width={773}
                 height={515}
                 className={cn(
-                    'aspect-[3/2] relative drop-shadow-section-image mask-image'
+                    'aspect-[3/2] relative drop-shadow-section-image mask-image hidden md:block'
+                )}
+                alt="A girl impresed with her hand in his forhead"
+                onLoad={() => setIsLoaded(true)}
+                onLoadStart={() => setIsLoaded(true)}
+            />
+            <Image
+                src={section1Girl}
+                width={475}
+                height={317}
+                className={cn(
+                    'aspect-[3/2] relative drop-shadow-section-image mask-image md:hidden'
                 )}
                 alt="A girl impresed with her hand in his forhead"
                 onLoad={() => setIsLoaded(true)}

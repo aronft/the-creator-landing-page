@@ -37,7 +37,7 @@ export const Characteristics = ({ className }: { className?: string }) => {
                                 alt=""
                                 aria-hidden
                                 id="characteristics-think-1"
-                                className="absolute left-8 top-24 -rotate-[22deg]"
+                                className="absolute w-16 left-8 top-24 -rotate-[22deg]"
                             />
                             <Image
                                 src={thinkImage}
