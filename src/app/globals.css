@@ -52,3 +52,34 @@ p {
 .mask-image {
     mask-image:linear-gradient(to bottom, theme(colors.tertiary) 70%, transparent 100%)
 }
+
+
+.animation-left-line {
+     & path {
+        fill: transparent;
+        stroke-width: 3;
+        stroke:  theme('colors.primary-alt');
+        stroke-dasharray: 3000;
+        stroke-dashoffset: 3000;
+        animation: animate-left-line 2s linear forwards;
+     }
+}
+
+@keyframes animate-left-line {
+    0% {
+        stroke-dashoffset: 3000;
+    }
+    40% {
+        stroke-dashoffset: 1500;
+    }
+
+    80% {
+        fill: transparent;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        fill: theme('colors.primary-alt');
+        stroke-dashoffset: 0;
+    }
+}
