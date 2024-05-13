@@ -49,6 +49,30 @@ export const Footer = () => {
                         </a>
                     </div>
                 </div>
+                <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-4">
+                    <p>
+                        Layout by{' '}
+                        <a
+                            href="https://github.com/aronft"
+                            className="underline"
+                            aria-label='link to github profile "aronft"'
+                            target="_blank"
+                        >
+                            @aronft
+                        </a>
+                    </p>
+                    <p className="">
+                        Designed by{' '}
+                        <a
+                            href="https://www.figma.com/community/file/1325928372652466207"
+                            className="underline"
+                            aria-label='Link to figma profile "Casey Spirid"'
+                            target="_blank"
+                        >
+                            Casey Spirid
+                        </a>
+                    </p>
+                </div>
             </Container>
         </footer>
     )
