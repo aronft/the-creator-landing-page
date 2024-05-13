@@ -9,19 +9,29 @@ import {
     SectionLayout,
     SectionLayoutProps,
 } from '@/components/ui/layout/section-layout'
+import useOnEscreen from '@/hooks/use-on-escreen'
+import { cn } from '@/utils/class-names'
+import { withAnimation } from '@/components/hoc/with-animation'
 
 export const PartnersSection = ({ ...props }: SectionLayoutProps) => {
+    const { ref, isIntersecting } = useOnEscreen<SVGSVGElement>({
+        threshold: 0.5,
+    })
     return (
         <SectionLayout {...props}>
             <PartnerSectionLine
-                className="absolute w-[50%] -left-5 max-w-2xl hidden lg:block"
+                className={cn(
+                    'absolute w-[50%] -left-5 max-w-2xl hidden lg:block lg:opacity-0 text-primary-alt',
+                    { 'animation-left-line lg:opacity-100 ': isIntersecting }
+                )}
                 aria-hidden
+                ref={ref}
             />
             <Container className="flex flex-col items-center gap-16 relative">
                 <Heading className="max-w-4xl text-center" size="big" tag="h2">
                     Contact us today to explore partnership{' '}
                     <span className="inline-block relative">
-                        <UnderLineAlt className="absolute md:scale-105 w-full bottom-0 translate-y-1/2" />
+                        <UnderLineAlt className="text-primary absolute md:scale-105 w-full bottom-0 translate-y-1/2" />
                         <span className="relative">opportunities!</span>
                     </span>
                 </Heading>

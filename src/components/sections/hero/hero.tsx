@@ -13,17 +13,22 @@ import { HeroLineRight } from '@/components/vectors/hero-line-right'
 import { SemiCircle } from '@/components/vectors/semi-circle'
 import { SectionLayout } from '@/components/ui/layout/section-layout'
 import { cn } from '@/utils/class-names'
-import dynamic from 'next/dynamic'
+import styles from './hero.module.css'
 
 //
 export const Hero = ({ className }: { className?: string }) => {
     return (
         <SectionLayout className={cn('relative isolate', className)}>
             <div
-                className="top-0 left-0 absolute not-sr-only h-full  "
+                className="top-0 left-0 absolute not-sr-only h-full"
                 aria-hidden
             >
-                <HeroLineLeft className="absolute w-auto h-full hidden lg:block " />
+                <HeroLineLeft
+                    className={cn(
+                        'absolute w-auto h-full hidden lg:block text-primary-alt ',
+                        'animation-left-line'
+                    )}
+                />
                 <Image
                     src={lefthand}
                     alt=""
@@ -57,7 +62,12 @@ export const Hero = ({ className }: { className?: string }) => {
                     height={32}
                     aria-hidden
                 />
-                <HeroLineRight className="absolute hidden lg:block bottom-[10%] overflow-visible" />
+                <HeroLineRight
+                    className={cn(
+                        'absolute hidden lg:block bottom-[10%] text-primary-alt',
+                        'animation-left-line'
+                    )}
+                />
             </div>
             <Image
                 src={facebookimg}
@@ -101,7 +111,7 @@ export const Hero = ({ className }: { className?: string }) => {
                 <Heading className="text-center" size="large" tag="h1">
                     Spark your {`brand's`}
                     <span className="relative inline-block">
-                        <SemiCircle className="absolute w-full top-0 -mt-3" />
+                        <SemiCircle className="absolute w-full top-0 -mt-3 text-primary" />
                         <span className="relative">imaginative</span>
                     </span>
                     flair with us

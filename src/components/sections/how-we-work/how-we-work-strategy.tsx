@@ -4,9 +4,10 @@ import likeImage from '@/assets/like.webp'
 import Image from 'next/image'
 import lefthandImage from '@/assets/how-we-work-section/how-we-work-hand-left.webp'
 import righthandImage from '@/assets/how-we-work-section/how-we-work-hand-right.webp'
-import { HowWeWorkLineLeft } from '@/components/vectors/how-we-work-line-left'
 import { HowWeWorkLineRight } from '@/components/vectors/how-we-work-line-right'
 import { cn } from '@/utils/class-names'
+import { HowWeWorkLineLeftWrap } from './how-we-work-line-left-wrap'
+import { HowWeWorkLineRightWrap } from './how-we-work-line-right-wrap'
 
 export const HowWeWorkStrategy = ({ className }: { className?: string }) => {
     return (
@@ -16,7 +17,7 @@ export const HowWeWorkStrategy = ({ className }: { className?: string }) => {
                 className="absolute right-0 scale-x-[-1] top-0 lg:right-auto lg:left-0 lg:scale-x-100
                     h-full"
             >
-                <HowWeWorkLineLeft className="h-full scale-110 translate-y-4 ml-14 overflow-visible " />
+                <HowWeWorkLineLeftWrap />
                 <Image
                     src={lefthandImage}
                     alt=""
@@ -37,7 +38,8 @@ export const HowWeWorkStrategy = ({ className }: { className?: string }) => {
                     height={313}
                     className="absolute bottom-0 right-0 object-cover max-h-[313px] object-left-top "
                 />
-                <HowWeWorkLineRight className="absolute left-[20%] bottom-14 h-[70%] overflow-visible " />
+                {/* <HowWeWorkLineRight className="absolute left-[20%] bottom-14 h-[70%] overflow-visible " /> */}
+                <HowWeWorkLineRightWrap />
             </div>
             <Container className=" flex items-center flex-col gap-16 text-center max-w-3xl relative">
                 <Heading size="big" tag="h2">
