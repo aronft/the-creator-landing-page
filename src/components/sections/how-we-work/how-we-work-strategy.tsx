@@ -14,14 +14,16 @@ export const HowWeWorkStrategy = ({ className }: { className?: string }) => {
         <section className={cn('relative', className)}>
             <div
                 aria-hidden
-                className="absolute right-0 scale-x-[-1] top-0 lg:right-auto lg:left-0 lg:scale-x-100
-                    h-full"
+                className="absolute right-0 scale-x-[-1] w-[20vw] top-0 lg:right-auto lg:left-0
+                    lg:scale-x-100 h-full"
             >
                 <HowWeWorkLineLeftWrap />
                 <Image
                     src={lefthandImage}
+                    width={262}
+                    height={313}
                     alt=""
-                    className="hidden lg:block absolute top-0 object-cover max-h-[313px] object-left w-[20vw]
+                    className="hidden lg:block absolute top-0 object-cover max-h-[313px] object-left
                         -translate-y-8"
                 />
             </div>

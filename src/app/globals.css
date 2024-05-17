@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+
+    /* light colors */
+    --color-pink-200: #FFADF2; 
+    --color-pink-400: #FF60E6;
+    --color-pinK-500:  #ff5ae3;
+    --color-celtic-500: #1F392C;
+    --color-brown-50: #F8F5F0;
+
+    /* dark colors  */
+
+    --color-pink-800: #930079; 
+    --color-pink-950: #650053; 
+    --color-pink-900: #97007b;
+    --color-cloud-200: #ccc8c1;
+    --color-brown-950: #30211a;
+    --color-smoke-950: #181a1b;
+    
+    --color-primary: var(--color-pink-400);
+    --color-primary-alt: var(--color-pink-200);
+    --color-primary-shadow: var(--color-pinK-500);
+    --color-secondary: var(--color-celtic-500);
+    --color-tertiary: var(--color-brown-50);
+
+    --color-white: #fff;
+    
+  }
+}
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -15,6 +45,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
   line-height: 1.5;
   min-height: 100dvh;
@@ -41,6 +72,17 @@ p {
   isolation: isolate;
 }  
 
+
+/* dark theme */
+
+html.dark {
+    --color-primary: var(--color-pink-800);
+    --color-primary-alt: var(--color-pink-950);
+    --color-primary-shadow: var(--color-pink-900);
+    --color-secondary: var(--color-cloud-200);
+    --color-tertiary: var(--color-brown-950);
+    --color-white: var(--color-smoke-950);
+}
 
 /* global styles */
 

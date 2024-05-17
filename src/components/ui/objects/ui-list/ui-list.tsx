@@ -3,7 +3,7 @@ import { Children } from 'react'
 
 type Directions = 'vertical' | 'horizontal'
 
-interface UiListProps extends React.ComponentPropsWithoutRef<'ul'> {
+export interface UiListProps extends React.ComponentPropsWithoutRef<'ul'> {
     direction?: Directions
 }
 

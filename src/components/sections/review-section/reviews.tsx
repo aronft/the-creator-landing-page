@@ -57,7 +57,10 @@ export const Reviews = () => {
                             { ' border-primary border ': !isPrevEnable }
                         )}
                     >
-                        <Icon icon={'arrowLeft'} className="w-6 not-sr-only" />
+                        <Icon
+                            icon={'arrowLeft'}
+                            className="w-6 not-sr-only text-secondary"
+                        />
                     </Button>
                     <Button
                         aria-label="next carousel button"
