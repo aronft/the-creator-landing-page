@@ -75,7 +75,7 @@ p {
 
 /* dark theme */
 
-html.dark {
+[data-theme='dark'] {
     --color-primary: var(--color-pink-800);
     --color-primary-alt: var(--color-pink-950);
     --color-primary-shadow: var(--color-pink-900);
