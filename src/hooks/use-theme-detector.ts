@@ -7,7 +7,7 @@ export const useThemeDetector = () => {
         }
     }
     const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme())
-    const mqListener = (e) => {
+    const mqListener = (e: MediaQueryListEvent) => {
         setIsDarkTheme(e.matches)
     }
 
