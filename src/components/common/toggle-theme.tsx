@@ -31,7 +31,13 @@ export const ToggleTheme = () => {
                 onClick={() => handleMenuThemeVisibilty(!isOpenThemeMenu)}
             >
                 <Icon
-                    icon={'theme'}
+                    icon={
+                        theme === 'dark'
+                            ? 'dark'
+                            : theme === 'auto'
+                              ? 'theme'
+                              : 'light'
+                    }
                     className=" text-primary-shadow"
                     size="small"
                 />
