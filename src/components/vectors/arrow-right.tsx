@@ -10,7 +10,7 @@ export const ArrowRight = ({ ...props }: SvgProps) => {
         >
             <path
                 d="M15 1L19 5M19 5L15 9M19 5L1 5"
-                stroke="#1F392C"
+                stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"

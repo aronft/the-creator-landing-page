@@ -10,8 +10,11 @@ import { List } from '@/components/icons/list'
 import { cn } from '@/utils/class-names'
 import { ArrowLeft } from '@/components/icons/arrow-left'
 import { ArrowRight } from '@/components/vectors/arrow-right'
+import { ThemeIcon } from '@/components/icons/theme'
+import { LightIcon } from '@/components/icons/light'
+import { DarkIcon } from '@/components/icons/dark'
 
-type Sizes = 'medium'
+type Sizes = 'medium' | 'small'
 
 const ICONS = {
     facebook: Facebook,
@@ -24,6 +27,9 @@ const ICONS = {
     list: List,
     arrowLeft: ArrowLeft,
     arrowRight: ArrowRight,
+    theme: ThemeIcon,
+    light: LightIcon,
+    dark: DarkIcon,
 } as const
 
 export type IconTypes = keyof typeof ICONS
@@ -35,6 +41,7 @@ interface IconProps extends SvgProps {
 
 const sizesClasses: Record<Sizes, string> = {
     medium: 'w-8 h-8',
+    small: 'w-5 h-5',
 }
 
 export const Icon = ({
