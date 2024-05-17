@@ -1,9 +1,9 @@
-import { THEME, Theme } from '@/components/common/toggle-theme'
+import { Theme } from '@/interfaces/theme'
 import { Icon, IconTypes } from '../../atoms/icon/icon'
 import { cn } from '@/utils/class-names'
 
 interface ThemeMenuProps {
-    name: keyof typeof THEME
+    name: Theme
     icon: IconTypes
     updateTheme: (theme: Theme) => void
     closeMenu: () => void
