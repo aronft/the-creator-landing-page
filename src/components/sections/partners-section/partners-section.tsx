@@ -11,7 +11,6 @@ import {
 } from '@/components/ui/layout/section-layout'
 import useOnEscreen from '@/hooks/use-on-escreen'
 import { cn } from '@/utils/class-names'
-import { withAnimation } from '@/components/hoc/with-animation'
 
 export const PartnersSection = ({ ...props }: SectionLayoutProps) => {
     const { ref, isIntersecting } = useOnEscreen<SVGSVGElement>({

@@ -3,6 +3,7 @@ import './globals.css'
 
 import { montserratFont, kulimParkFont } from '@/settings/fonts'
 import { cn } from '@/utils/class-names'
+import { Providers } from './providers'
 
 export const metadata: Metadata = {
     title: 'The Creator',
@@ -43,7 +44,9 @@ export default function RootLayout({
                     content="The Creator - Hero section"
                 />
             </head>
-            <body className="bg-tertiary text-secondary">{children}</body>
+            <body className="bg-tertiary text-secondary">
+                <Providers>{children}</Providers>
+            </body>
         </html>
     )
 }
