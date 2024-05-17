@@ -109,7 +109,7 @@ export const Hero = ({ className }: { className?: string }) => {
             />
             <Container className="flex items-center flex-col gap-8 relative">
                 <Heading className="text-center" size="large" tag="h1">
-                    Spark your {`brand's`}
+                    Spark your {`brand's `}
                     <span className="relative inline-block">
                         <SemiCircle className="absolute w-full top-0 -mt-3 text-primary" />
                         <span className="relative">imaginative</span>

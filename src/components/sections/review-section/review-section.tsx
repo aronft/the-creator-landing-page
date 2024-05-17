@@ -47,7 +47,7 @@ export const ReviewSection = ({ ...props }: SectionLayoutProps) => {
                     />
                     <span className="relative inline-block">
                         <SemiCircleAlt
-                            className="absolute top-0 h-full scale-105 w-full hidden md:block"
+                            className="absolute top-0 h-full scale-105 w-full hidden md:block text-primary-alt"
                             aria-hidden
                         />
                         <span className="relative">grow on any Platform</span>
@@ -71,7 +71,7 @@ export const ReviewSection = ({ ...props }: SectionLayoutProps) => {
                     <span className="inline-block relative">
                         we can do it
                         <Underlined
-                            className="absolute top-full w-[60%] left-1/2 -translate-x-1/2"
+                            className="absolute top-full w-[60%] left-1/2 -translate-x-1/2 text-primary-alt"
                             aria-hidden
                         />
                     </span>{' '}

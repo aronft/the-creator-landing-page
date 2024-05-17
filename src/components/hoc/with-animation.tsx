@@ -10,7 +10,6 @@ export function withAnimation(
 ) {
     return function WithAnimation(props: any) {
         const { ref, isIntersecting } = useOnEscreen({ threshold: 0.5 })
-        console.log(isIntersecting, ref)
         return (
             <Component
                 {...props}
